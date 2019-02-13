@@ -149,7 +149,7 @@
                         <viewLayoutGuide key="safeArea" id="oOZ-as-t08"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qli-NZ-CBw">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="FJN-gq-vYm">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="FJN-gq-vYm">
                             <connections>
                                 <segue destination="GFb-Lu-tmf" kind="presentation" id="Lug-Rq-0VY"/>
                             </connections>
@@ -171,7 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ltu-81-p6n">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Ltu-81-p6n">
                                 <rect key="frame" x="20" y="44" width="374" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -233,4 +233,8 @@
             <point key="canvasLocation" x="1050.7246376811595" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image_placeholder" width="375" height="375"/>
+        <image name="insta_camera_btn" width="25" height="25"/>
+    </resources>
 </document>
