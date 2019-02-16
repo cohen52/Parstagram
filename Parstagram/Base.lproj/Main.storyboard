@@ -39,13 +39,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPe-Xk-UPS">
-                                <rect key="frame" x="43" y="473" width="329" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bji-tc-EF0">
                                 <rect key="frame" x="83" y="527" width="52" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,12 +64,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Nt-HE-TCU">
+                                <rect key="frame" x="44" y="473" width="328" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="passwordField" destination="kPe-Xk-UPS" id="vNL-ju-mMc"/>
+                        <outlet property="passwordField" destination="3Nt-HE-TCU" id="WTh-st-RoV"/>
                         <outlet property="usernameField" destination="wen-Mk-oeM" id="3Md-up-afz"/>
                         <segue destination="2Qe-cW-RaT" kind="presentation" identifier="loginSegue" id="81K-pN-sfW"/>
                     </connections>
@@ -85,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="173.91304347826087" y="133.92857142857142"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--Feed-->
         <scene sceneID="pFO-PL-5Y5">
             <objects>
                 <viewController id="onE-Sd-vr4" customClass="FeedViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oOZ-as-t08"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qli-NZ-CBw">
+                    <navigationItem key="navigationItem" title="Feed" id="Qli-NZ-CBw">
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="FJN-gq-vYm">
                             <connections>
                                 <segue destination="GFb-Lu-tmf" kind="presentation" id="Lug-Rq-0VY"/>
